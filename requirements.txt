@@ -1,0 +1,5 @@
+coverage
+Django
+django-nose
+djangorestframework
+nose

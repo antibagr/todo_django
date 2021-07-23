@@ -20,7 +20,9 @@ class TodoListCreateAPIViewTestCase(APITestCase):
         self.api_authentication()
 
     def api_authentication(self):
+        'Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b'
         self.client.credentials(HTTP_AUTHORIZATION='Token ' + self.token.key)
+
 
     def test_create_todo(self):
         response = self.client.post(self.url, {"name": "Clean the room!"})
